@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: "Ubuntu", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.7rem;
+}
+
+header {
+   margin: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+header h1 {
+   font-size: 2.5rem;
+}
+
+#calculator-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px
+}
+
+.w-h-a {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+   width: 60%;
+}
+
+.w-h-a label {
+   margin-bottom: 0.5rem;
+   /* Adds space between the label and the input */
+   font-weight: 400;
+   /* Adjust the font weight for better visibility */
+}
+
+.w-h-a input {
+   margin-top: 0.5rem;
+   width: 100%;
+   /* Makes input take full width of its container */
+   padding: 10px;
+   /* Adds padding inside the input */
+   border: 1px solid black;
+   /* Adds a border around the input */
+   border-radius: 1px;
+   /* Rounds the corners of the input */
+}
+
+.w-h-a input:hover {
+   border: 1px solid black;
+}
+
+.gender {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   margin-bottom: 2rem;
+   width: 100%;
+   margin-top: 3px;
+}
+
+.gender input[type="radio"] {
+   display: none;
+   /* Hide the default radio button */
+}
+
+.gender label {
+   width: 20%;
+   position: relative;
+   margin: 1rem;
+   color: black;
+   font-family: "Ubuntu", sans-serif;
+   /* Changed to Ubuntu for consistency */
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   gap: 1em;
+   border: 1px solid black;
+   padding: 0.6rem;
+   border-radius: 1px;
+}
+
+.gender label:before {
+   content: "";
+   height: 1em;
+   width: 1em;
+   border: 3px solid black;
+   border-radius: 50%;
+   display: inline-block;
+   margin-right: 0.5em;
+}
+
+.gender input[type="radio"]:checked+label:before {
+   background-color: white;
+   border: 3px solid white;
+   color: black;
+   content: "";
+   border-radius: 50%;
+}
+
+.gender input[type="radio"]:checked+label {
+   background-color: black;
+   color: white;
+   border-color: white;
+
+}
+
+.activity-level-container {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+   width: 60%;
+}
+
+
+.activity-level-container select {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid black;
+   border-radius: 1px;
+}
+
+.activity-level-container label {
+   margin-bottom: 0.5rem;
+   /* Adds space between the label and the input */
+   font-weight: 400;
+   /* Adjust the font weight for better visibility */
+}
+
+#calc {
+   margin-top: 1rem;
+   padding: 15px;
+   border: 1px solid black;
+   border-radius: 1px;
+   cursor: pointer;
+   border-radius: 1px;
+   transition: 0.3s ease-in-out;
+}
+
+#calc:hover {
+   transform: scale(1.1);
+   background-color: black;
+   color: white;
+}
+
+.bmr__tdee {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   margin: 2rem;
+}
+
+.bmr__tdee section p span {
+   font-size: 2.5rem;
+   display: inline-block;
+   margin-bottom: 1px;
+   font-weight: 400;
+}
+
+#activity-level-table {
+   border-collapse: collapse;
+   width: 100%;
+   padding: 2rem;
+}
+
